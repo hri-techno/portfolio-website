@@ -11,7 +11,6 @@ body {
   transition: 0.3s;
 }
 
-/* Light mode */
 body.light {
   background: #f8fafc;
   color: #0f172a;
@@ -21,28 +20,25 @@ body.light {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 20px;
+  background: rgba(2,6,23,0.8);
   position: sticky;
   top: 0;
-  background: rgba(2,6,23,0.8);
-  backdrop-filter: blur(10px);
 }
 
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: inherit;
+/* Header */
+header {
+  text-align: center;
+  padding: 80px 20px;
 }
 
-button {
-  margin-left: 15px;
-  padding: 5px 10px;
-  cursor: pointer;
+header h1 {
+  font-size: 40px;
 }
 
 /* Sections */
-.section {
-  padding: 80px 20px;
+section {
+  padding: 60px 20px;
   text-align: center;
 }
 
@@ -64,7 +60,26 @@ body.light .card {
   background: white;
 }
 
-/* Animation */
+/* Skills */
+.skill {
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: left;
+}
+
+.bar {
+  height: 10px;
+  background: #334155;
+  border-radius: 10px;
+}
+
+.progress {
+  height: 10px;
+  background: #38bdf8;
+  border-radius: 10px;
+}
+
+/* Animations */
 .hidden {
   opacity: 0;
   transform: translateY(40px);
@@ -74,4 +89,17 @@ body.light .card {
   opacity: 1;
   transform: translateY(0);
   transition: all 0.8s ease;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
 }
