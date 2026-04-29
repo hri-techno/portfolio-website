@@ -20,20 +20,35 @@ body.light {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  background: rgba(2,6,23,0.8);
+  padding: 20px 40px;
   position: sticky;
   top: 0;
+  background: rgba(2,6,23,0.8);
 }
 
 /* Header */
 header {
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 20px;
 }
 
-header h1 {
-  font-size: 40px;
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 10px;
+  background: #38bdf8;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
 }
 
 /* Sections */
@@ -60,23 +75,11 @@ body.light .card {
   background: white;
 }
 
-/* Skills */
-.skill {
-  margin: 20px auto;
-  max-width: 400px;
-  text-align: left;
-}
-
-.bar {
-  height: 10px;
-  background: #334155;
-  border-radius: 10px;
-}
-
-.progress {
-  height: 10px;
-  background: #38bdf8;
-  border-radius: 10px;
+/* Links */
+.links a {
+  margin: 10px;
+  text-decoration: none;
+  color: #38bdf8;
 }
 
 /* Animations */
@@ -88,18 +91,14 @@ body.light .card {
 .show {
   opacity: 1;
   transform: translateY(0);
-  transition: all 0.8s ease;
+  transition: 0.8s;
 }
 
-/* Responsive */
+/* Mobile */
 @media (max-width: 600px) {
   nav {
     flex-direction: column;
-    text-align: center;
   }
-
-  .card {
-    width: 90%;
-  }
+}
 }
 }
