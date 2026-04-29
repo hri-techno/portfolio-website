@@ -1,3 +1,4 @@
+// 🌗 Theme toggle
 const toggleBtn = document.getElementById("themeToggle");
 
 toggleBtn.onclick = () => {
@@ -9,7 +10,7 @@ if (localStorage.getItem("theme") === "light") {
   document.body.classList.add("light");
 }
 
-// Scroll animations
+// ✨ Scroll animations
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -20,7 +21,7 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll(".hidden").forEach(el => observer.observe(el));
 
-// Typing effect
+// 🔥 Typing effect
 const text = ["Aspiring Software Developer", "Learning DevOps", "Building Projects"];
 let i = 0, j = 0, currentText = "", isDeleting = false;
 
@@ -43,5 +44,7 @@ function type() {
 
   setTimeout(type, isDeleting ? 50 : 100);
 }
+
+type();
 
 type();
