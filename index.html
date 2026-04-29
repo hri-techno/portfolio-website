@@ -2,45 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Ritika | Portfolio</title>
+  <title>Ritika | Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
+<nav id="navbar">
   <h2>Ritika.dev</h2>
   <div>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
+    <button id="themeToggle">🌙</button>
   </div>
 </nav>
 
-<header>
-  <h1>Hi, I'm Ritika Sharma👋</h1>
-  <p>Aspiring Software Developer</p>
+<header class="section">
+  <h1>Hi, I'm Ritika Sharma 👋</h1>
+  <p>Aspiring Software Developer focused on building and deploying real projects</p>
 </header>
 
-<section id="about">
+<section id="about" class="section hidden">
   <h2>About Me</h2>
-  <p>I build simple and efficient web projects and love learning DevOps concepts.</p>
+  <p>I enjoy building simple, efficient applications and learning real-world tools like CI/CD and cloud deployment.</p>
 </section>
 
-<section id="projects">
+<section id="projects" class="section hidden">
   <h2>Projects</h2>
 
   <div class="card">
-    <h3>CI/CD Project</h3>
-    <p>Automated deployment using GitHub Actions and Netlify.</p>
-    <a href="#">GitHub</a>
+    <h3>CI/CD Pipeline Project</h3>
+    <p>Automated deployment using GitHub Actions + Netlify</p>
+    <a href="https://github.com/hri-techno">
   </div>
 
 </section>
 
-<section id="contact">
+<section id="contact" class="section hidden">
   <h2>Contact</h2>
   <p>Email: hritikasharma321@gmail.com</p>
 </section>
 
+<script src="script.js"></script>
 </body>
+</html>
 </html>
